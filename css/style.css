@@ -1,0 +1,108 @@
+*,
+*:before,
+*:after{
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@font-face {
+	font-family: 'Miso';
+	src: url(../fonts/miso.woff);
+	font-weight: normal;
+	font-style: normal;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(253, 223, 127);
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+.container{
+	max-width: 1173px;
+	min-width: 160px;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-grow: 1;
+}
+.coupon-container{
+	width: 390px;
+	height: 500px;
+	min-width: 160px;
+	padding: 30px 15px;
+	flex-grow: 1;
+}
+.coupon-container:hover{
+	padding: 0 15px;
+	cursor: pointer;
+}
+.coupon{
+	font-family: 'Miso', sans-serif;
+	color:  #333;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.coupon__price{
+	color:  #02995b;
+	font-size: 70px;
+	line-height: 24px;
+}
+.coupon__title{
+	font-size: 56px;
+	line-height: 24px;
+	font-weight: 400;
+}
+.coupon__description{
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 26px;
+	width: 150px;
+	text-align: center;
+	margin-top: 0;
+}
